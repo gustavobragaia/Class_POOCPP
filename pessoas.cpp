@@ -6,12 +6,12 @@ using namespace std;
 namespace poo{
     // construtor 
     Pessoa::Pessoa(string nome, string cpf):nome(nome),cpf(cpf){
-        cout << "Construtor: (" << nome << "," << cpf << ")"<< endl;
+        // cout << "Construtor: (" << nome << "," << cpf << ")"<< endl;
     }
 
     // destrutor
     Pessoa::~Pessoa(){
-        cout << "Destrutor: (" << nome << "," << cpf << ")"<< endl;
+        // cout << "Destrutor: (" << nome << "," << cpf << ")"<< endl;
     }
 
     // getter cpf

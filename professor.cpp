@@ -8,12 +8,12 @@ namespace poo{
 
     // construtor
     Professor::Professor(string nome, string cpf, string universidade):Pessoa(nome ,cpf), universidade(universidade){
-        cout << "Construtor: (" << nome << "," << cpf << ","<< universidade << ")" <<  endl;
+        // cout << "Construtor: (" << nome << "," << cpf << ","<< universidade << ")" <<  endl;
     }
 
     // destrutor
     Professor::~Professor(){
-        cout << "Destrutor: (" << getNome() << "," << getCPF() << "," << universidade << ")" <<  endl;
+        // cout << "Destrutor: (" << getNome() << "," << getCPF() << "," << universidade << ")" <<  endl;
     }
 
     // get universidade

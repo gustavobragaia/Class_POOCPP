@@ -1,3 +1,6 @@
+#ifndef ESTUDANTE_H
+#define ESTUDANTE_H
+
 #include <iostream>
 #include "pessoas.h"
 
@@ -6,10 +9,8 @@ using namespace std;
 namespace poo{
     class Estudante : public Pessoa{
         public:
-            // construtor
-            Estudante(string nome, string cpf, int RA, double prova1, double prova2, double trabalho1, double trabalho2):Pessoa(nome,cpf), RA(RA), prova1(prova1), prova2(prova2), trabalho1(trabalho1), trabalho2(trabalho2){}
-
-            // destrutor
+            // construtor e destrutor
+            Estudante(string nome, string cpf, int RA, double prova1, double prova2, double trabalho1, double trabalho2);
             ~Estudante();
 
             // getters
@@ -38,3 +39,5 @@ namespace poo{
             double trabalho2;
     };
 };
+
+#endif //ESTUDANTE_H

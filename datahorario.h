@@ -5,7 +5,8 @@ using namespace std;
 namespace poo{
     class DataHorario{
         public:
-            DataHorario(int dia, int mes, int ano, int hora, int minuto, int segundo):dia(dia), mes(mes), ano(ano), hora(hora), minuto(minuto), segundo(segundo){}
+            // construtor e destrutor
+            DataHorario(int dia, int mes, int ano, int hora, int minuto, int segundo);
             ~DataHorario();
             
             // getters
@@ -21,7 +22,12 @@ namespace poo{
 
             // imprime
             void imprimePorExtenso();
+
+            //formata a data
+            void formatarData();
             
+            //formata o horario
+            void formatarHorario();
 
         private:
             int dia;

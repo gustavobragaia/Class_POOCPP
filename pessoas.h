@@ -1,3 +1,5 @@
+#ifndef PESSOAS_H
+#define PESSOAS_H
 #include <iostream>
 
 using namespace std;
@@ -6,7 +8,7 @@ namespace poo{
     class Pessoa{
         public:
             // construtor e destrutor
-            Pessoa(string nome, string cpf):nome(nome),cpf(cpf){}
+            Pessoa(string nome, string cpf);
             ~Pessoa();
 
             // getters
@@ -19,3 +21,5 @@ namespace poo{
             string cpf;
     };
 };
+
+#endif // PESSOAS_H

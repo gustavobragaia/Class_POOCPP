@@ -1,7 +1,6 @@
 #include <iostream>
 #include "estudante.h"
 #include "pessoas.h"
-#include "pessoas.cpp"
 
 using namespace std;
 
@@ -9,12 +8,12 @@ namespace poo{
 
     // construtor
     Estudante::Estudante(string nome, string cpf, int RA, double prova1, double prova2, double trabalho1, double trabalho2):Pessoa(nome,cpf), RA(RA), prova1(prova1), prova2(prova2), trabalho1(trabalho1), trabalho2(trabalho2){
-        cout << "Construtor: (" << nome << "," << cpf << "," << RA << "," << prova1 << "," << prova2 << "," << trabalho1 << "," << trabalho2 << ")" << endl;
+        // cout << "Construtor: (" << nome << "," << cpf << "," << RA << "," << prova1 << "," << prova2 << "," << trabalho1 << "," << trabalho2 << ")" << endl;
     }
     
     // destrutor
      Estudante::~Estudante(){
-        cout << "Destrutor: (" << getNome() << "," << getCPF() << "," << RA << "," << prova1 << "," << prova2 << "," << trabalho1 << "," << trabalho2 << ")" << endl;
+        // cout << "Destrutor: (" << getNome() << "," << getCPF() << "," << RA << "," << prova1 << "," << prova2 << "," << trabalho1 << "," << trabalho2 << ")" << endl;
     }
 
     // get RA
@@ -32,22 +31,22 @@ namespace poo{
 
     bool Estudante::aprovado(){
         if(Estudante::media() >= 6){
-            cout << "O estudante " << getNome() << "foi aprovado!" << endl;
+            cout << "O estudante " << getNome() << " foi aprovado!" << endl;
             return true;
         }
         else{
-            cout << "O estudante " << getNome() << "foi reprovado!" << endl;
+            cout << "O estudante " << getNome() << " foi reprovado!" << endl;
             return false;
         }
     }
 
     bool Estudante::sac(){
         if(Estudante::media() < 6 &&  Estudante::media() >= 5){
-            cout << "O estudante " << getNome() << "ficou de SAC!" << endl;
+            cout << "O estudante " << getNome() << " ficou de SAC!" << endl;
             return true;
         }
         else{
-            cout << "O estudante " << getNome() << "não ficou de SAC!" << endl;
+            cout << "O estudante " << getNome() << " não ficou de SAC!" << endl;
             return false;
         }
     }
